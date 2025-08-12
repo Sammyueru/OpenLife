@@ -1,5 +1,6 @@
-/* Peepers
- * Copyright (C) 2025 Samm and Peepers contributors.
+/*/
+ * OpenLife
+ * Copyright (C) 2025 Samm and OpenLife contributors.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as Published by
@@ -12,16 +13,20 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see https://www.gnu.org/licenses/.
- */
+/*/
 #include <iostream>
+#include <engine/types/transform.hpp>
 
-namespace Peepers::Engine::Objects {
+namespace OpenLife::Engine::Objects {
     class IjoObject {
     public:
-        // Transform transform;
+        Transform transform;
+
     public:
         IjoObject();
         ~IjoObject();
+
+    public:
+        void Start();
     };
 };
-
